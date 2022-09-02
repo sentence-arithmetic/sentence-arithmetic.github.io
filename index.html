@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+  <link rel="stylesheet" href="css/pico.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="container">
+  <hgroup>
+    <h1>Sentence Arithmetic</h1>
+    <h2>A basic custom template for Pico using only CSS custom properties (variables).</h2>
+  </hgroup>
+</header>
+
+<main class="container">
+  <section id="introduction">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rutrum consequat tristique. Duis vulputate,
+      mauris non suscipit sodales, augue magna ultrices dui, luctus venenatis eros velit in elit. Proin a lacus et diam
+      ornare pharetra. Maecenas at mollis nibh, at congue mauris. Curabitur vitae felis a massa feugiat vehicula
+      hendrerit sed massa. Etiam a faucibus est, ut vehicula orci. Integer rutrum tellus et aliquam rutrum. Aliquam id
+      metus sodales augue scelerisque dapibus efficitur in augue.
+    </p>
+    <blockquote>
+      Provide suggested citation...
+    </blockquote>
+  </section>
+
+  <section id="instructions">
+    <h2>Instructions</h2>
+    <p>
+      Explain what the visitor should do...
+    </p>
+  </section>
+
+  <section id="plot">
+    <form method="get" action="#sentences">
+      <label for="passive">Passive Sentence</label>
+      <input type="text" id="passive" name="passive" value="The car was chased by the dog.">
+      <small>Curabitur consequat lacus at lacus porta finibus.</small>
+
+
+      <label for="active">Active Sentence</label>
+      <input type="text" id="active" name="active" value="The dog chased the car.">
+      <small>Curabitur consequat lacus at lacus porta finibus.</small>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <canvas id="sentences"></canvas>
+  </section>
+</main>
+
+<script src="js/vendor/papaparse.min.js"></script>
+<script src="js/vendor/chart.min.js"></script>
+<script defer src="js/main.js"></script>
+</body>
+
+</html>
